@@ -1,0 +1,10 @@
+[user]
+        name = Alan Ghelardi
+        email = alan.ghelardi@nubank.com.br
+        signingkey = 2D33C64D93ADA7CE
+[commit]
+        gpgsign = true
+[core]
+        editor = emacsclient
+[url "git@github.com:"]
+	insteadOf = https://github.com/
