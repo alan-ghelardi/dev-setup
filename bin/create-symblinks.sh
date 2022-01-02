@@ -4,13 +4,10 @@ set -euo pipefail
 
 cur_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
 
-mkdir -p ~/.bash.d/
+dotfiles=$(realpath $cur_dir/../dotfiles)
 
-if [[ ! -f ~/.bash.d/.rc.sh ]]; then
-    ln -s  $cur_dir/../dotfiles/.rc.sh ~/.bash.d/.rc.sh
-fi
-
-for file in $(ls -A ${cur_dir}/../dotfiles/conf); do
-    source=$(realpath $file)
-    ln -s $source $HOME/$(basename $source)
+for file in $(ls -A $dotfiles/conf); do
+    source=$dotfiles/conf/$file
+    target=$HOME/$file
+    ln -s $source $target
 done

@@ -47,6 +47,6 @@ sha1sum  --check --warn --strict $checksum
 
 rm -f $checksum
 
-mkdir $(dirname  $JAVA_HOME) && \
-    tar -xvzf jdk/jdk-11.0.8_linux-x64_bin.tar.gz -C $(dirname  $JAVA_HOME) && \
+sudo mkdir $(dirname  $JAVA_HOME) && \
+    sudo tar -xvzf jdk/jdk-11.0.8_linux-x64_bin.tar.gz -C $(dirname  $JAVA_HOME) && \
     rm -rf jdk
