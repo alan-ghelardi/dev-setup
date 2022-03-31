@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-
-KO_VERSION=0.9.3
+KO_VERSION=0.11.2
 OS=Linux
 ARCH=x86_64
 
