@@ -1,4 +1,5 @@
 # GitHub
+export GITHUB_USER=alan-ghelardi
 export GITHUB_TOKEN=`cat ~/.secrets/github-token`
 
 # Golang
