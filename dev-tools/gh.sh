@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-GH_VERSION=2.4.0
+GH_VERSION=2.11.3
 
 curl -L https://github.com/cli/cli/releases/download/v${GH_VERSION}/gh_${GH_VERSION}_linux_386.tar.gz -o gh.tar.gz
 tar xvzf gh.tar.gz
