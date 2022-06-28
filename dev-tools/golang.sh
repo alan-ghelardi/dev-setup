@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-GOLANG_VERSION=1.16
+GOLANG_VERSION=1.17
 
 curl --silent --location https://golang.org/dl/go${GOLANG_VERSION}.linux-amd64.tar.gz --output golang.tar.gz && \
     sudo tar -C /usr/local -xvzf golang.tar.gz && \
