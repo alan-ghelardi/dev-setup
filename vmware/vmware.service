@@ -1,12 +1,12 @@
 [Unit]
 Description=VMware daemon
-Requires=vmware-usbarbitrator.service
-Before=vmware-usbarbitrator.service
+Requires=vmware-USBArbitrator.service
+Before=vmware-USBArbitrator.service
 After=network.target
 
 [Service]
-ExecStart=/etc/init.d/vmware start
-ExecStop=/etc/init.d/vmware stop
+ExecStart=/usr/lib/vmware/scripts/init/vmware start
+ExecStop=/usr/lib/vmware/scripts/init/vmware stop
 PIDFile=/var/lock/subsys/vmware
 RemainAfterExit=yes
 
