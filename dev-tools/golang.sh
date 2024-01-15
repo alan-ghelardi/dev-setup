@@ -11,5 +11,8 @@ curl --silent --location https://golang.org/dl/go${GOLANG_VERSION}.linux-amd64.t
 # Install gopls
 go install golang.org/x/tools/gopls@latest
 
+# Install kubeconform: https://github.com/yannh/kubeconform.
+go install github.com/yannh/kubeconform/cmd/kubeconform@latest
+
 # Allow private Git modules
 go env -w GOPRIVATE=github.com/nubank/*
