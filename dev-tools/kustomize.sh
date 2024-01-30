@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-KUSTOMIZE_VERSION=4.5.7
+KUSTOMIZE_VERSION=5.3.0
 
 curl --silent --location https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v${KUSTOMIZE_VERSION}/kustomize_v${KUSTOMIZE_VERSION}_linux_amd64.tar.gz --output kustomize.tar.gz && \
     tar -xzvf kustomize.tar.gz && \
