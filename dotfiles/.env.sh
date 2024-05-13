@@ -30,6 +30,6 @@ export KUBE_EDITOR=emacs
 export LEIN_USE_BOOTCLASSPATH=no
 
 # Nubank
-export NU_HOME="/home/alangh/dev/nu"
-export NUCLI_HOME="/home/alangh/dev/nu/nucli"
-export PATH="$PATH:$NU_HOME/nudev:$NU_HOME/nucli"
+export NU_HOME="$HOME/dev/nu"
+export NUCLI_HOME="$NU_HOME/nucli"
+export PATH="$PATH:$NUCLI_HOME"
