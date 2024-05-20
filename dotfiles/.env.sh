@@ -1,3 +1,6 @@
+# Default system editor.
+export EDITOR=emacs
+
 # GitHub
 export GITHUB_USER=alan-ghelardi
 export GITHUB_TOKEN=`cat ~/.secrets/github-token`
@@ -28,6 +31,11 @@ export KUBE_EDITOR=emacs
 # For instance, clojure.instant depends on java.sql.Timestamp whose module
 # (java.sql) isn't available in the new Java module system.
 export LEIN_USE_BOOTCLASSPATH=no
+
+# Node
+# Add the location of the node binary installed via nvm to the path to make
+# it visible to the LSP server from within Emacs.
+ export PATH=$PATH:$(dirname $(which node))
 
 # Nubank
 export NU_HOME="$HOME/dev/nu"
