@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-kind_version=0.22.0
+kind_version=0.23.0
 
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v${kind_version}/kind-linux-amd64
 chmod +x ./kind

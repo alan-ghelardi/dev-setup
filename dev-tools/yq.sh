@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eux
 
-yq_version=4.20.2
+yq_version=4.44.3
 
 curl -Lo yq.tar.gz https://github.com/mikefarah/yq/releases/download/v${yq_version}/yq_linux_amd64.tar.gz
 tar -xvf yq.tar.gz ./yq_linux_amd64
