@@ -1,3 +1,5 @@
+export PATH=$PATH:$HOME/.local/bin
+
 # Default system editor.
 export EDITOR=emacs
 

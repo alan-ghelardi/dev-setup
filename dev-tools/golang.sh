@@ -23,5 +23,8 @@ go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.57.1
 # Cosign:
 go install github.com/sigstore/cosign/v2/cmd/cosign@latest
 
+# KCL
+go install kcl-lang.io/cli/cmd/kcl@latest
+
 # Allow private Git modules
 go env -w GOPRIVATE=github.com/nubank/*
