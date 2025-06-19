@@ -16,7 +16,7 @@ export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 export PINENTRY_USER_DATA="USE_CURSES=1"
 export GPG_TTY=$(tty)
 unset SSH_AGENT_PID
-export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 # Java
 export JAVA_HOME=/usr/lib/jdk/jdk-11.0.8
