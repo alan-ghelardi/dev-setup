@@ -7,6 +7,9 @@ export EDITOR=emacs
 export GITHUB_USER=alan-ghelardi
 export GITHUB_TOKEN=`cat ~/.secrets/github-token`
 
+# Open AI
+export OPEN_AI_API_KEY=`cat ~/.secrets/open-ai-api-key `
+
 # Golang
 export GOPATH=$HOME/go
 export GO111MODULE=on
