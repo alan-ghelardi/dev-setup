@@ -8,7 +8,10 @@ export GITHUB_USER=alan-ghelardi
 export GITHUB_TOKEN=`cat ~/.secrets/github-token`
 
 # Open AI
-export OPEN_AI_API_KEY=`cat ~/.secrets/open-ai-api-key `
+export OPENAI_API_KEY=`cat ~/.secrets/open-ai-api-key `
+
+# Anthropic
+export ANTHROPIC_API_KEY=`cat ~/.secrets/anthropic-api-key`
 
 # Golang
 export GOPATH=$HOME/go
