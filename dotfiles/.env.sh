@@ -10,9 +10,6 @@ export GITHUB_TOKEN=`cat ~/.secrets/github-token`
 # Open AI
 export OPENAI_API_KEY=`cat ~/.secrets/open-ai-api-key `
 
-# Anthropic
-export ANTHROPIC_API_KEY=`cat ~/.secrets/anthropic-api-key`
-
 # Golang
 export GOPATH=$HOME/go
 export GO111MODULE=on
@@ -44,8 +41,3 @@ export LEIN_USE_BOOTCLASSPATH=no
 # Add the location of the node binary installed via nvm to the path to make
 # it visible to the LSP server from within Emacs.
  export PATH=$PATH:$(dirname $(which node))
-
-# Nubank
-export NU_HOME="$HOME/dev/nu"
-export NUCLI_HOME="$NU_HOME/nucli"
-export PATH="$PATH:$NUCLI_HOME"
