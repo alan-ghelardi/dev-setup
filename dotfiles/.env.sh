@@ -5,7 +5,7 @@ export EDITOR=emacs
 
 # GitHub
 export GITHUB_USER=alan-ghelardi
-export GITHUB_TOKEN=`cat ~/.secrets/github-token`
+#export GITHUB_TOKEN=`cat ~/.secrets/github-token`
 
 # Open AI
 export OPENAI_API_KEY=`cat ~/.secrets/open-ai-api-key `
