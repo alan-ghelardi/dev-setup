@@ -18,7 +18,13 @@ go install github.com/yannh/kubeconform/cmd/kubeconform@latest
 go install github.com/go-delve/delve/cmd/dlv@latest
 
 # Install golangci-lint.
-go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+curl --silent https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh --output lint.sh &&
+    chmod +x lint.sh &&
+    sh lint.sh &&
+    chmod a+x bin/golangci-lint &&
+    sudo mv bin/golangci-lint /usr/local/bin/ &&
+    rm -rf bin lint.sh &&
+    golangci-lint --version
 
 # Cosign:
 go install github.com/sigstore/cosign/v2/cmd/cosign@latest

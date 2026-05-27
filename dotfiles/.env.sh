@@ -10,6 +10,8 @@ export GITHUB_USER=alan-ghelardi
 # Open AI
 export OPENAI_API_KEY=`cat ~/.secrets/open-ai-api-key `
 
+export E2B_API_KEY=`cat ~/.secrets/e2b `
+
 # Golang
 export GOPATH=$HOME/go
 export GO111MODULE=on
@@ -22,10 +24,7 @@ unset SSH_AGENT_PID
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 # Java
-export JAVA_HOME=/usr/lib/jdk/jdk-11.0.8
-# Force JDK11 to have the same locale behavior as JDK8
-export _JAVA_OPTIONS="-Djava.locale.providers='COMPAT,JRE,CLDR'"
-
+export JAVA_HOME=/opt/java/jdk-21.0.11+10
 export PATH="$PATH:$JAVA_HOME/bin"
 
 # Kubernetes
