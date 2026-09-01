@@ -10,3 +10,5 @@
         insteadOf = https://github.com/
 [url "git@github.com:nubank"]
 	insteadOf = https://github.com/nubank
+[rebase]
+	gpgSign = true
